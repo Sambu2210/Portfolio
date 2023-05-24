@@ -2079,7 +2079,7 @@ ol {
     padding-top: 30px;
     position: initial;
 }
-.about-area .about-me-box .infos h4 {
+.about-area .about-me-box .infos h4,.about-area .about-me-box .infos p {
     color: #BCBCBC;
     opacity: 0.7;
     font-size: 14px;
