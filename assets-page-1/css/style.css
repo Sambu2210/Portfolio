@@ -821,6 +821,7 @@ article,
 		margin-right: calc(50% - 50vw)!important;
 		max-width: 1000%!important;
 		width: 100vw!important;
+        background-color: red !important;
 	}
 	
 	.light-section-container, .dark-section-container {
@@ -828,6 +829,7 @@ article,
 		box-sizing: border-box;
 		width: 100%;
 		margin: 0 auto;
+        /* background-color: black !important; */
 	}
 	
 	.content-row {
@@ -1661,10 +1663,11 @@ a {
     transform-origin: left;
     animation: loader_running 3s ease-in-out 1s infinite normal both
 }.icon-boxes {
-    max-width: 550px;
+    max-width: 687px;
 }
 .item{
-    margin-right: 90px;
+    margin-right: 0px;
+    text-align: center;
 }
 
 
@@ -1700,6 +1703,7 @@ ol {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 30px;
+    margin-left: 5px;
 }
 .theme-btn:hover {
     background: #fff;
@@ -1772,8 +1776,7 @@ ol {
 .projects-area .project-item .overlay-link,
 .about-area .about-edc-exp .overlay-link,
 .about-area .about-image-box .overlay-link,
-.about-area .about-me-box .overlay-link,
-.info-box .overlay-link {
+.about-area .about-me-box .overlay-link{
     left: 0;
     top: 0;
     border-radius: 30px;
@@ -1784,6 +1787,17 @@ ol {
     z-index: 9;
     
 }
+.info-box .overlay-link {
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+
 .credential-area .credential-sidebar .bg-img,
 .contact-area .contact-form .bg-img,
 .project-details-wrap .project-about-2 .bg-img,
@@ -2118,6 +2132,7 @@ ol {
     max-width: 100%;
     height: 19px;
     overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 .marquee div {
@@ -3552,5 +3567,19 @@ ol {
 
 /*  */
 
-
-
+.row{
+    display: flex;
+    align-items: end;
+}
+.owl-dot{
+    display: none !important;
+}
+.shadow-box *{
+    z-index: 0 !important;
+}
+.shadow-box::before{
+    z-index: 0 ;
+}
+.light-section-container{
+    background-color: black;
+}
